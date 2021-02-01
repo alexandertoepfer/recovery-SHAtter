@@ -31,6 +31,7 @@ std::array< char, CHARSETSIZE > charset = {
 ```
 The way a String can be represented in the Algorithm is very convenient as from above Alphabet with a bit of math we can express each unique String as unique Number to exactly represent that String. All that's needed is the Character itself as index multiplied by the base of that Character to shift it to a specific place in the String. For Example: If we wanted to represent **"abcd"** where **I** is the index of the Character and **S** the size of the Alphabet.
 ![Preview](equation.png)
+
 This allows us to easily continue the computation from where we left of, since the iteration of the algorithm gives us enough information to recreate a String, even with a starting point, since all we need is to subtract it, and it also allows for very specific ranges where the amount of guesses can be chosen based on the permutation of Characters. For Example: If we wanted to check for a password of a fixed length all that's needed is **S** to the power of the length, assuming the starting point is **0**.
 
 ## Implementation of String Increment
