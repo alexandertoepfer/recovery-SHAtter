@@ -197,7 +197,7 @@ int getGuessesVerbose( std::string& value, std::string hash, const unsigned int 
 	return -1;
 }
 
-void bruteSHAker( std::string hash, int guesses, int parallel, std::array< char, CHARSETSIZE >& charset ) {
+void bruteSHAtter( std::string hash, int guesses, int parallel, std::array< char, CHARSETSIZE >& charset ) {
 	// For looking up indices of characters
 	std::array< unsigned int, 128 > charsetr = reverseLookup( charset, false );
 
@@ -270,7 +270,7 @@ void bruteSHAker( std::string hash, int guesses, int parallel, std::array< char,
 	std::cout << "Runtime: " << d.count() << 's' << std::endl;
 }
 
-void dictSHAker( std::string hash, int guesses, int parallel, std::string filename ) {
+void dictSHAtter( std::string hash, int guesses, int parallel, std::string filename ) {
 	std::cout << "Hash: " << "SHA-1$" << hash << std::endl;
 	std::cout << "Guesses: " << guesses << std::endl;
 	std::cout << "Threads: " << parallel << std::endl;
@@ -344,11 +344,11 @@ int main() {
 	// Multi-threaded Brute Force attack
 	// Permutation of characters can be used as guesses
 	// Assume 1-4 character password for hash (CHARSLEN^4)-1
-	bruteSHAker( "7969A66BE4D694B6C6126BCB2F81533E69E913CB", /* divisible as integer by threads */49787135 + 1, THREADS, charset );
+	bruteSHAtter( "7969A66BE4D694B6C6126BCB2F81533E69E913CB", /* divisible as integer by threads */49787135 + 1, THREADS, charset );
 	std::cin.get();
 
 	// Single-threaded dictionary attack
-	dictSHAker( "6A9F6C3FFF9581A22EF10CABD544143E37C61B4F", 14344326, 1, "rockyou.txt" );
+	dictSHAtter( "6A9F6C3FFF9581A22EF10CABD544143E37C61B4F", 14344326, 1, "rockyou.txt" );
 	// Passwords have to be seperated by \n
 	// Guesses equals to amount of lines read from dictionary
 	std::cin.get();
