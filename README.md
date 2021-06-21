@@ -3,7 +3,7 @@ This Program will Brute-Force any SHA1-Hash you pass, give it a target, press en
 
 ![Preview](console-output.PNG)
 
-**NOTE**:The screenshot is from the newer SHAtter v0.2 
+Note: The screenshot is from the newer version SHAtter v0.2 
 
 ## Summary
   1. Permutation of Charset and String Projection.
