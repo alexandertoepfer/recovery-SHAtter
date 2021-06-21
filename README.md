@@ -1,7 +1,7 @@
 # SHAtter Password Recovery - A Multi-Threaded Brute Force and Dictionary Attack on Unsalted SHA1
 This Program will Brute-Force any SHA1-Hash you pass, give it a target, press enter and forget about it until it found a solution. The Algorithm is using an optimized Charset based on Probability Analysis and CryptoPP for fairly fast Hash Computation, as well as Guess Ranges to support a starting and ending point for an attack with very elegant String Projection. If you rather run a word list, that is supported as well, even when it's restricted to being single-threaded for now, but a combination of dictionary words with Brute-Force parts is in the works too.
 
-![Preview](console-out.PNG)
+![Preview](console-output.PNG)
 
 ## Summary
   1. Permutation of Charset and String Projection.
