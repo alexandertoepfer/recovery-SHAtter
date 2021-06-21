@@ -100,5 +100,5 @@ As always use this program with caution, the program is insanely fast when it co
 | ----------- | ------------ | ----------------------------- | --------------- |
 | 10.000.000  | 12           | Intel i7-5820K@3.30 GHz       | 7.865s          |
 
-Keep the CPU Usage in mind when working with this, feel free to adjust the threads and guesses however you want to, I will continue working on dictionaries as well as maybe Prefix Word Lists with Brute-Force Suffix.
+Keep the CPU Usage in mind when working with this, feel free to adjust the threads and guesses however you want to.
 ![Preview](running.PNG)
