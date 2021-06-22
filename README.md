@@ -69,7 +69,7 @@ Right now dictionaries are partly supported, because they can only be executed s
 [Password dictionaries](https://wiki.skullsecurity.org/Passwords)
 ```c
 // Single-threaded dictionary attack
-dictSHAker( "6A9F6C3FFF9581A22EF10CABD544143E37C61B4F", 14344326, 1, "rockyou.txt" );
+dictSHAtter( "6A9F6C3FFF9581A22EF10CABD544143E37C61B4F", 14344326, 1, "rockyou.txt" );
 // Passwords have to be seperated by \n
 // Guesses equals to amount of lines read from dictionary
 std::cin.get();
@@ -89,7 +89,7 @@ There is one last thing I'd like to talk about, which is how to initialize each 
 // Multi-threaded Brute Force attack
 // Permutation of characters can be used as guesses
 // Assume 1-4 character password for hash (CHARSLEN^4)-1
-bruteSHAker( "7969A66BE4D694B6C6126BCB2F81533E69E913CB", 49787136, THREADS, charset );
+bruteSHAtter( "7969A66BE4D694B6C6126BCB2F81533E69E913CB", 49787136, THREADS, charset );
 std::cin.get();
 ```
 
